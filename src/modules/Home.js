@@ -1,3 +1,5 @@
+import "../css/Home.css"
+
 const homeMenu = function () {
     const container = document.createElement("div");
     container.innerHTML = "";

@@ -1,3 +1,4 @@
+import "../css/About.css"
 
 const aboutMenu = function () {
     const container = document.createElement("div");
