@@ -7,6 +7,8 @@ const navBar = function () {
     const content = document.getElementById("content");
     const buttons = ["Home","Menu","About"];
 
+
+
     buttons.forEach(button =>{
         let tempButton = document.createElement("button");
         tempButton.textContent = button;
@@ -14,16 +16,6 @@ const navBar = function () {
 
         tempButton.addEventListener("click", () =>{
             content.innerHTML = "";
-
-            // if (tempButton.textContent == "About"){
-            //     content.appendChild(About);
-            // }
-            // if (tempButton.textContent == "Home"){
-            //     content.appendChild(Home);
-            // }
-            // if (tempButton.textContent == "Menu"){
-            //     content.appendChild(Menu);
-            // }
 
             switch (tempButton.textContent) {
                 case "About":
@@ -43,6 +35,9 @@ const navBar = function () {
 
         })
     })
+
+    content.innerHTML = "";
+    content.appendChild(Home);
 
     return navBar;
 }();

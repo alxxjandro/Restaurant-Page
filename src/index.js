@@ -1,5 +1,5 @@
-import nav from "./navBar.js";
-import "./style.css";
+import nav from "./modules/navBar";
+import "./css/style.css";
 
 
 const navBar = function (){
