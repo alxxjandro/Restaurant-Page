@@ -5,12 +5,11 @@ const homeMenu = function () {
     const container = document.createElement("div");
     container.innerHTML = "";
 
-    const frases = ["Welcome", `TO ODIN'S PASTA PLACE`];
-    const welcomeP1 = createElement("h1",frases);
+    const welcomeText = createElement("h1",["Welcome to", `ODIN'S PASTA PLACE`],"welcomeText");
+    const description = createElement("p",["Step into a world of fresh, artisanal pasta where bold flavors and timeless recipes come to life."],"home-description");
 
-    container.appendChild(welcomeP1);
-
-
+    container.appendChild(welcomeText);
+    container.appendChild(description);
     return container;
 }();
 
