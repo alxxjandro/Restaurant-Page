@@ -41,3 +41,7 @@ nav > div > button:hover{
 nav > div > button:active{
     transform: scale(1.07);
 }
+
+.active-button{
+    background-color: rgb(130, 130, 130);
+}

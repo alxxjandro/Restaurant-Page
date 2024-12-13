@@ -14,6 +14,10 @@ const navBar = function () {
         navBar.appendChild(tempButton);
 
         tempButton.addEventListener("click", () =>{
+
+            //to add the class "active-button" to the last clicked one 
+            Array.from(navBar.children).forEach(btn => btn.classList.remove("active-button"));
+            tempButton.classList.add("active-button");
             content.innerHTML = "";
 
             switch (tempButton.textContent) {
@@ -42,7 +46,6 @@ const navBar = function () {
     content.innerHTML = "";
     content.appendChild(Home);
     content.classList.add("Home");
-    
     return navBar;
 }();
 
