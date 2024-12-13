@@ -25,22 +25,23 @@
 .welcomeText > h1{
     margin: 0;
     color: rgb(0, 0, 0);
-    font-size: 2.5rem;
     text-align: center;
-    line-height: 2rem;
+    line-height: 2.5rem;
+    font-size: 3.5rem;
 }
 
 /* "Welcome" text */
 .welcomeText > h1:first-child{
     font-family: 'Rouge Script', sans-serif;
     color: rgb(255, 187, 0);
-    margin-bottom: -.2rem;
-    font-size: 4.2rem;
+    margin-bottom: .1rem;
+    font-size: 5.2rem;
     z-index: 1;
 }
 
 .home-description{
     color: black;
+    font-size: 1.2rem;
     padding: 0 3rem;
     max-width: 340px;
     text-align: center;
