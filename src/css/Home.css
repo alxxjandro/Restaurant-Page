@@ -28,7 +28,6 @@
     font-size: 2.5rem;
     text-align: center;
     line-height: 2rem;
-
 }
 
 /* "Welcome" text */
@@ -42,6 +41,7 @@
 
 .home-description{
     color: black;
-    width: 340px;
+    padding: 0 3rem;
+    max-width: 340px;
     text-align: center;
 }
