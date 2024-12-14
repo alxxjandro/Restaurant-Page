@@ -1,5 +1,70 @@
 
 .Menu{
-    border: solid 5px blue;
     flex: 1;
+}
+
+#content > div{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-grid{
+    display: grid;
+    width: 90%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 340px));
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.dish-container{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    padding: 1.5rem 1rem;
+    background-color: rgba(0, 0, 0, 0.412);
+    color: white;
+    border-radius: 15px;
+    max-width: 340px;
+    border: solid 3px rgba(0, 0, 0, 0.117);
+    transition: transform .15s ease, background-color .3s ease;
+}
+
+.dish-container:hover{
+    border: solid 3px rgba(0, 0, 0, 0.56);
+    transform: translate(0, -5px);
+}
+
+.dish-container:active{
+    background-color: rgba(0, 0, 0, 0.502);
+}
+
+
+.dish-title > h2{
+    margin: 0;
+    padding: 0 0 1rem 0;
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+
+.dish-desc > p{
+    padding-top: 1rem;
+    text-align: center;
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.dish-img{
+    border-radius: 20px;
+    border: solid 4px rgb(255, 187, 0);
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+    height: 306px;
+
 }
