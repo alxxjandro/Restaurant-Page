@@ -25,11 +25,13 @@ const mainMenu = function () {
     const container = document.createElement("div");
     container.innerHTML = "";
 
+    const creditsDiv = document.querySelector(".credits");
+    creditsDiv.classList.add("changeBG")
+
     const ourMenu = createElement("h1",["Our Menu!"],"ourMenu");
     const menuDescription = createElement("h1",["Indulge in our handcrafted pasta dishes, prepared fresh daily with bold flavors and timeless recipes."],"menuDescription");
 
     const gridContainer = document.createElement("div");
-
     const dishOne = createMenuOption("Classic Carbonara",dishOneImg,"Rich and creamy with smoky pancetta, fresh eggs, and Parmesan cheese.");
     const dishTwo = createMenuOption("Butter Shrimp",dishThreeImg,"Linguine tossed in a luscious garlic butter sauce, topped with succulent shrimp.");
     const dishThree = createMenuOption("Pesto Primavera",dishTwoImg,"A vibrant blend of fresh basil pesto, cherry tomatoes, and seasonal vegetables.");

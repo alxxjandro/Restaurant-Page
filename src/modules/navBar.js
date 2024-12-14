@@ -35,6 +35,7 @@ const navBar = function () {
                     content.appendChild(Menu);
                     content.className = "";
                     content.classList.add("Menu");
+                    content.classList.add("changeBG");
                     break;
                 default:
                     console.log("Fail to load content");
