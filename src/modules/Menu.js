@@ -25,9 +25,6 @@ const mainMenu = function () {
     const container = document.createElement("div");
     container.innerHTML = "";
 
-    const creditsDiv = document.querySelector(".credits");
-    creditsDiv.classList.add("changeBG")
-
     const ourMenu = createElement("h1",["Our Menu!"],"ourMenu");
     const menuDescription = createElement("h1",["Indulge in our handcrafted pasta dishes, prepared fresh daily with bold flavors and timeless recipes."],"menuDescription");
 
